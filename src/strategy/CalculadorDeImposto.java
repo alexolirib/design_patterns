@@ -8,7 +8,7 @@ public class CalculadorDeImposto {
         System.out.println(impost);
     }
     //com a interface ajudou a economizar linha de código de deixar mais genérico
-//    public void  realizaCalculo(strategy.Orcamento orcamento, String imposto){
+//    public void  realizaCalculo(strategy.ChainOfResponsibility.Orcamento orcamento, String imposto){
 //
 //        if (imposto.equals("strategy.ICMS")) {
 //            double icms = new strategy.ICMS().calculoICMS(orcamento);
