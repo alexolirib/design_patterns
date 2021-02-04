@@ -6,8 +6,10 @@ public class CalculadorDeDesconto {
         AplicaDesconto d1 = new DescontoCincoItens();
         AplicaDesconto d2 = new DescontoMaisQuinhentosReais();
         AplicaDesconto d3 = new SemDesconto();
+        AplicaDesconto d4 = new DescontoPorVendaCasada();
         d1.setProximo(d2);
-        d2.setProximo(d3);
+        d2.setProximo(d4);
+        d4.setProximo(d3);
 
         return d1.desconto(orcamento);
         //como foi criado as classes

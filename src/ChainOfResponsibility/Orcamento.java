@@ -9,14 +9,20 @@ public class Orcamento {
     private final double valor;
     private final List<Item> items;
 
-    public Orcamento(double valor) {
-        this.valor = valor;
-        this.items = new ArrayList<>();
+    public Orcamento(List<Item> items) {
+        double sum=0;
+        for (Item i: items) {
+            sum+=i.getValor();
+        }
+        this.valor = sum;
+        this.items = items;
     }
 
-    public void adicionaItem(Item item){
-        items.add(item);
-    }
+
+
+//    public void adicionaItem(Item item){
+//        items.add(item);
+//    }
 
     public List<Item> getItems() {
         //lista imutável
